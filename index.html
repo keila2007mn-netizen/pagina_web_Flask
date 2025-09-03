@@ -7,43 +7,57 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Menú de navegación fijo -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de inicio -->
+    <header id="inicio">
         <h1>¡Bienvenido a mi sitio web!</h1>
-        <p>Descubre mis ideas, proyectos y recursos personales.</p>
+        <p>Explora mis ideas, proyectos y recursos personales.</p>
+        <img src="imagenes/mi_foto.jpg" alt="Mi proyecto" class="imagen-principal">
+        <a href="#contacto" class="btn">Contáctame</a>
     </header>
 
-    <main>
-        <section class="intro">
-            <img src="imagenes/mi_foto.jpg" alt="Mi proyecto" class="imagen-principal">
-            <p>Este es mi proyecto personal donde comparto mis ideas, recursos y avances en distintos temas. Aquí podrás explorar mis trabajos, aprendizajes y mucho más.</p>
-            <a href="#contacto" class="btn">Contáctame</a>
-        </section>
-
-        <section class="proyectos">
-            <h2>Proyectos Destacados</h2>
+    <!-- Sección de proyectos -->
+    <section id="proyectos" class="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="tarjetas-container">
             <div class="tarjeta">
+                <img src="imagenes/proyecto1.jpg" alt="Proyecto 1">
                 <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto 1.</p>
+                <p>Breve descripción del proyecto 1.</p>
+                <a href="#" class="btn-pequeno">Ver más</a>
             </div>
             <div class="tarjeta">
+                <img src="imagenes/proyecto2.jpg" alt="Proyecto 2">
                 <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto 2.</p>
+                <p>Breve descripción del proyecto 2.</p>
+                <a href="#" class="btn-pequeno">Ver más</a>
             </div>
             <div class="tarjeta">
+                <img src="imagenes/proyecto3.jpg" alt="Proyecto 3">
                 <h3>Proyecto 3</h3>
-                <p>Descripción breve del proyecto 3.</p>
+                <p>Breve descripción del proyecto 3.</p>
+                <a href="#" class="btn-pequeno">Ver más</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contacto" class="contacto">
-            <h2>Contacto</h2>
-            <p>Si deseas contactarme, puedes enviarme un correo a <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
-        </section>
-    </main>
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>Si deseas contactarme, puedes enviarme un correo a <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
+    </section>
 
+    <!-- Footer -->
     <footer>
         <p>© 2025 Mi Proyecto Personal</p>
     </footer>
 </body>
 </html>
-
