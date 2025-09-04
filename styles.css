@@ -1,0 +1,211 @@
+<<<<<<< HEAD
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Menú de navegación fijo */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3498db;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #2ecc71;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 120px 20px 60px; /* espacio superior para menú */
+    background-color: #3498db;
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    animation: fadeIn 1.5s;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.imagen-principal {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+/* Proyectos */
+.proyectos {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.proyectos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3498db;
+}
+
+.tarjetas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+.btn-pequeno {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-pequeno:hover {
+    background-color: #2980b9;
+}
+
+/* Contacto */
+.contacto {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contacto a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+=======
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+>>>>>>> f56f52a (Corrijo estructura y agrego imágenes)
+    text-align: center;
+    padding: 20px 0;
+}
+
+<<<<<<< HEAD
+/* Animaciones */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tarjetas-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+=======
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+>>>>>>> f56f52a (Corrijo estructura y agrego imágenes)
+}
