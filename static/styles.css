@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset básico */
 * {
     margin: 0;
@@ -155,10 +156,24 @@ header p {
 footer {
     background-color: #2c3e50;
     color: white;
+=======
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+>>>>>>> f56f52a (Corrijo estructura y agrego imágenes)
     text-align: center;
     padding: 20px 0;
 }
 
+<<<<<<< HEAD
 /* Animaciones */
 @keyframes fadeIn {
     from {opacity: 0;}
@@ -179,4 +194,18 @@ footer {
     header h1 {
         font-size: 2rem;
     }
+=======
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+>>>>>>> f56f52a (Corrijo estructura y agrego imágenes)
 }
