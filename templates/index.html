@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Mi Proyecto Personal</title>
-    <link rel="stylesheet" href="static/styles.css">
+
+    <!-- SEO básico -->
+    <meta name="description" content="Sitio web personal con proyectos y contacto.">
+    <meta name="keywords" content="proyectos, portafolio, contacto">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <!-- Menú de navegación fijo -->
@@ -21,7 +29,7 @@
     <header id="inicio">
         <h1>¡Bienvenido a mi sitio web!</h1>
         <p>Explora mis ideas, proyectos y recursos personales.</p>
-        <img src="imagenes/mi_foto.jpg" alt="Mi foto" class="imagen-principal">
+        <img src="{{ url_for('static', filename='img/mi_foto.jpg') }}" alt="Mi Foto"> class="imagen-principal">
         <a href="#contacto" class="btn">Contáctame</a>
     </header>
 
@@ -30,19 +38,19 @@
         <h2>Proyectos Destacados</h2>
         <div class="tarjetas-container">
             <div class="tarjeta">
-                <img src="imagenes/proyecto1.jpg" alt="Proyecto 1">
+                <img src="{{ url_for('static', filename='img/proyecto1.jpg') }}" alt="Proyecto 1">
                 <h3>Proyecto 1</h3>
                 <p>Breve descripción del proyecto 1.</p>
                 <a href="#" class="btn-pequeno">Ver más</a>
             </div>
             <div class="tarjeta">
-                <img src="imagenes/proyecto2.jpg" alt="Proyecto 2">
+                <img src="{{ url_for('static', filename='img/proyecto2.jpg') }}" alt="Proyecto 2">
                 <h3>Proyecto 2</h3>
                 <p>Breve descripción del proyecto 2.</p>
                 <a href="#" class="btn-pequeno">Ver más</a>
             </div>
             <div class="tarjeta">
-                <img src="imagenes/proyecto3.jpg" alt="Proyecto 3">
+                <img src="{{ url_for('static', filename='img/proyecto3.jpg') }}" alt="Proyecto 3">
                 <h3>Proyecto 3</h3>
                 <p>Breve descripción del proyecto 3.</p>
                 <a href="#" class="btn-pequeno">Ver más</a>
@@ -61,20 +69,9 @@
     <!-- Footer -->
     <footer>
         <p>© 2025 Mi Proyecto Personal</p>
-=======
-    <title>Página de Inicio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
-    <header>
-        <h1>Bienvenido a Mi Página Web en Flask</h1>
-    </header>
-    <main>
-        <p>¡Esta es una página web simple creada con Flask!</p>
-    </main>
-    <footer>
-        <p>© 2025 Mi Página Web</p>
->>>>>>> f56f52a (Corrijo estructura y agrego imágenes)
     </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
